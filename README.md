@@ -41,11 +41,7 @@ Here’s a simple flow of the project:
 │ Browser │
 └───────────────┘
 
-yaml
-Copy code
 
-> You can later replace this ASCII diagram with an image using:
-> `![Architecture](images/architecture.png)`
 
 ---
 
@@ -56,8 +52,6 @@ flask-app/
 ├── Dockerfile # Docker instructions to build container
 └── requirements.txt # Python dependencies
 
-yaml
-Copy code
 
 ---
 
@@ -76,25 +70,19 @@ Copy code
 ```bash
 git clone https://github.com/vaibhaoy19/flask-docker-ec2.git
 cd flask-docker-ec2
+
 Build the Docker image:
-
-bash
-Copy code
 docker build -t flask-app .
+
 Run the Docker container:
-
-bash
-Copy code
 docker run -d -p 5000:5000 flask-app
-Open in browser:
 
-arduino
-Copy code
+Open in browser:
 http://localhost:5000
 You should see:
 Hello, Flask in Docker on AWS EC2!
 
-🌍 Deployment on AWS EC2
+## 🌍 Deployment on AWS EC2
 Launch Ubuntu EC2 instance
 
 Install Docker:
@@ -115,6 +103,5 @@ Open your EC2 public IP in browser:
 http://<EC2-Public-IP>:5000
 
 
-Copy code
 http://<EC2-Public-IP>:5000
 ✅ Expected Out
